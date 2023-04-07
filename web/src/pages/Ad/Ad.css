@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI, Regular;
+  font-size: 1.5rem;
+  color: #004040;
+  background-color: #ffffff;
+}
+
+.ads {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ads .adItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem;
+  background-color: #eeeeee;
+  width: 300px;
+  height: 300px;
+}
+.ads .adItem h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.ads .adItem p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/*# sourceMappingURL=Ad.css.map */

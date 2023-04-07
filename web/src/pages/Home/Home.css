@@ -1,3 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI, Regular;
+  font-size: 1.5rem;
+  color: #004040;
+  background-color: #ffffff;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+button[type=submit] {
+  background-color: #bfbe9c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: black;
+}
 
 /*# sourceMappingURL=Home.css.map */

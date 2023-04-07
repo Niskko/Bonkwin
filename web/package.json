@@ -22,7 +22,7 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"sass": "sass --watch src/App.sass:src/App.css src/router/router.sass:src/router/router.css src/pages/Home/Home.sass:src/pages/Home/Home.css src/pages/Ad/Ad.sass:src/pages/Ad/Ad.css src/pages/Profil/Profil.sass:src/pages/Profil/Profil.css"
+		"sass": "sass --watch src/App.sass:src/App.css src/router/router.sass:src/router/router.css src/pages/Home/Home.sass:src/pages/Home/Home.css src/pages/Ad/Ad.sass:src/pages/Ad/Ad.css src/pages/Ad/Create/AdCreate.sass:src/pages/Ad/Create/AdCreate.css src/pages/Profil/Profil.sass:src/pages/Profil/Profil.css"
 	},
 	"eslintConfig": {
 		"extends": [

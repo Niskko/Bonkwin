@@ -7,9 +7,13 @@ export namespace BonkwinService {
 	export const createBonkwin = (
 		title: string,
 		description: string,
-		deadline: string,
-		categorie: string
+		categorie: string,
+		price: number,
+		user: string
 	): void => {
-		BonkwinHelper.createBonkwin(title, description, deadline, categorie);
+		BonkwinHelper.createBonkwin(title, description, categorie, price, user);
+	};
+	export const deleteBonkwin = (id: string): void => {
+		BonkwinHelper.deleteBonkwin(id);
 	};
 }

@@ -10,15 +10,16 @@ const connection = (): Promise<void> => {
 const loadDatabase = (db: Database): void => {
 	db.prepare(
 		`
-CREATE TABLE IF NOT EXISTS bonkwin
-(
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-title VARCHAR NOT NULL,
-description VARCHAR NOT NULL,
-deadline VARCHAR NOT NULL,
-categorie VARCHAR NOT NULL
-)
-`
+		CREATE TABLE IF NOT EXISTS bonkwin
+		(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		title VARCHAR NOT NULL,
+		description VARCHAR NOT NULL,
+		categorie VARCHAR NOT NULL,
+		price INTEGER NOT NULL,
+		user VARCHAR NOT NULL
+		)
+		`
 	).run();
 };
 export { connection, database };

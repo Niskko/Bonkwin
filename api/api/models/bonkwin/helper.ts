@@ -7,13 +7,17 @@ export namespace BonkwinHelper {
 	export const createBonkwin = (
 		title: string,
 		description: string,
-		deadline: string,
-		categorie: string
+		categorie: string,
+		price: number,
+		user: string
 	): void => {
 		database
 			.prepare(
-				'INSERT INTO bonkwin(title, description, deadline, categorie) VALUES(?, ?, ?, ?)'
+				'INSERT INTO bonkwin(title, description, categorie, price, user) VALUES(?, ?, ?, ?, ?)'
 			)
-			.run([title, description, deadline, categorie]);
+			.run([title, description, categorie, price, user]);
+	};
+	export const deleteBonkwin = (id: string): void => {
+		database.prepare('DELETE FROM bonkwin WHERE id = ?').run([id]);
 	};
 }
